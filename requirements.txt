@@ -1,2 +1,4 @@
-https://PySimpleGUI.net/install PySimpleGUI
+--extra-index-url https://PySimpleGUI.net/install
+
+PySimpleGUI        # this will come from the private PySimpleGUI index
 keyboard
