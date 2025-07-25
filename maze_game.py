@@ -5,6 +5,10 @@ import random
 import time
 import PySimpleGUI as sg
 import keyboard
+sg.set_options(icon=None)
+
+# …rest of your code…
+window = sg.Window('My Maze Game', layout, finalize=True, icon=None)
 
                                     #CONFIGURATION#
 CELL_SIZE         = 20     # Pixels per cell
