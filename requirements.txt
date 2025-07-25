@@ -1,2 +1,2 @@
-PySimpleGUI
+https://PySimpleGUI.net/install PySimpleGUI
 keyboard
