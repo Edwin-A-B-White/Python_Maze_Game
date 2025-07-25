@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# macOS files
+.DS_Store
