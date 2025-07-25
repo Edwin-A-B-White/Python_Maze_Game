@@ -1,0 +1,12 @@
+# Use Gitpod’s ready-made Python workspace
+image: gitpod/workspace-python:latest
+
+# Install dependencies, then launch your maze game on port 3000
+tasks:
+  - init: pip install -r requirements.txt
+  - command: python maze_game.py --port 3000
+
+# Tell Gitpod to forward port 3000 and open its preview automatically
+ports:
+  - port: 3000
+    onOpen: open-preview
