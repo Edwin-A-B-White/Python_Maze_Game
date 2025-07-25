@@ -5,8 +5,8 @@
 1. **Clone your repo**
 
    ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
-   cd <your-repo>
+   git clone https://github.com/Edwin-A-B-White/Python_Maze_Game.git
+   cd Python_Maze_Game
    ```
 
 2. **Create & activate a virtual environment**
