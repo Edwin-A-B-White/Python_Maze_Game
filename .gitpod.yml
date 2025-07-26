@@ -1,12 +1,15 @@
-# Use Gitpod’s ready-made Python workspace
-image: gitpod/workspace-python:latest
+# use Gitpod's official Python image
+image:
+  file: .gitpod.Dockerfile
 
-# Install dependencies, then launch your maze game on port 3000
 tasks:
-  - init: pip install -r requirements.txt
-  - command: python maze_game.py --port 3000
+  - init: |
+      # update & install Xvfb so GUIs can run
+      sudo apt-get update
+      sudo apt-get install -y xvfb
+      # install your Python deps
+      pip3 install -r requirements.txt
 
-# Tell Gitpod to forward port 3000 and open its preview automatically
-ports:
-  - port: 3000
-    onOpen: open-preview
+  - command: |
+      # start a virtual display and run your game
+      xvfb-run --auto-servernum python3 maze_game.py
